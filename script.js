@@ -59,7 +59,7 @@ function showWeatherInput(data){
     weather.innerText=`${data.weather[0].main}`;
     min_max.innerHTML=`${Math.floor(data.main.temp_min)}&deg;C(min)/${Math.floor(data.main.temp_max)}&deg;C(max)`;
     humidity.innerText=`${data.main.humidity}`;
-    wind.innerText=`${data.main.speed} kmph`;
+    wind.innerText=`${data.wind.speed} kmph`;
     pressure.innerText=`${data.main.pressure}hPa`;
     updateBackground(data.weather[0].main);
 }
